@@ -72,7 +72,7 @@ extension PhotoPreviewViewControllerDelegate {
     ) { }
 }
 
-public class PhotoPreviewViewController: BaseViewController {
+public class PhotoPreviewViewController: HXBaseViewController {
     
     weak var delegate: PhotoPreviewViewControllerDelegate?
     public let config: PreviewViewConfiguration

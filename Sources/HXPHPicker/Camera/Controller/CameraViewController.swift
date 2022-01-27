@@ -10,7 +10,7 @@ import CoreLocation
 import AVFoundation
 
 /// 需要有导航栏
-open class CameraViewController: BaseViewController {
+open class CameraViewController: HXBaseViewController {
     public weak var delegate: CameraViewControllerDelegate?
     
     /// 相机配置

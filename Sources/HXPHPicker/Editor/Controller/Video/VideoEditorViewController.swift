@@ -9,7 +9,7 @@ import UIKit
 import AVKit
 import Photos
 
-open class VideoEditorViewController: BaseViewController {
+open class VideoEditorViewController: HXBaseViewController {
     public weak var delegate: VideoEditorViewControllerDelegate?
     
     /// 当前编辑的AVAsset

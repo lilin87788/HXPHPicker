@@ -63,6 +63,7 @@ class EditorConfigurationViewController: UITableViewController {
 //                    vc.photoEditorDelegate = self
 //                    present(vc, animated: true, completion: nil)
                 }else {
+    
                     #if canImport(Kingfisher)
                     let networkURL = URL(
                         string:

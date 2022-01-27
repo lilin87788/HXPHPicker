@@ -9,7 +9,7 @@
 import UIKit
 import Photos
 
-public class AlbumViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
+public class AlbumViewController: HXBaseViewController, UITableViewDataSource, UITableViewDelegate {
     
     public lazy var tableView: UITableView = {
         let tableView = UITableView(

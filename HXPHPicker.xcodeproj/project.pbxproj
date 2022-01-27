@@ -186,7 +186,7 @@
 		7BBBD55B25AEFD6E00301DCC /* PickerResultViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 7B49EDB5259D67F800A3D91A /* PickerResultViewController.xib */; };
 		7BBBD57225AEFE9100301DCC /* HXPHPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B73D6A8259C88A90045DA42 /* HXPHPicker.swift */; };
 		7BBBD57325AEFE9100301DCC /* BaseConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B87B89725A8073C009327C4 /* BaseConfiguration.swift */; };
-		7BBBD57425AEFE9100301DCC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB285B125A9F26A00DBCF2B /* BaseViewController.swift */; };
+		7BBBD57425AEFE9100301DCC /* HXBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB285B125A9F26A00DBCF2B /* HXBaseViewController.swift */; };
 		7BBBD57525AEFE9100301DCC /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B87B86C25A7EEEA009327C4 /* ProgressHUD.swift */; };
 		7BBBD57625AEFE9100301DCC /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB285B525A9FB8400DBCF2B /* VideoPlayerView.swift */; };
 		7BBBD57725AEFE9100301DCC /* PhotoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A0BF425A711BB00E949FD /* PhotoError.swift */; };
@@ -594,7 +594,7 @@
 		7BB2422026D8949D00424A8D /* PhotoPickerViewController+AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoPickerViewController+AlbumView.swift"; sourceTree = "<group>"; };
 		7BB2422226D8952100424A8D /* PhotoPickerViewController+FetchAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoPickerViewController+FetchAsset.swift"; sourceTree = "<group>"; };
 		7BB285AD25A9E59600DBCF2B /* Core+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core+UIImageView.swift"; sourceTree = "<group>"; };
-		7BB285B125A9F26A00DBCF2B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7BB285B125A9F26A00DBCF2B /* HXBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HXBaseViewController.swift; sourceTree = "<group>"; };
 		7BB285B525A9FB8400DBCF2B /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		7BB34D15279020B000B88F6E /* CustomVideoCompositionInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoCompositionInstruction.swift; sourceTree = "<group>"; };
 		7BB613FB26A0313700D38EBD /* GUIDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = GUIDE.md; sourceTree = "<group>"; };
@@ -1260,7 +1260,7 @@
 		7BB285B025A9F25000DBCF2B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7BB285B125A9F26A00DBCF2B /* BaseViewController.swift */,
+				7BB285B125A9F26A00DBCF2B /* HXBaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1707,7 +1707,7 @@
 				7BE1CA2F26F49B860069ACB6 /* PhotoPickerView+Cell.swift in Sources */,
 				7B8FB6BB26FB0D5700FA440B /* PhotoPickerSwitchLayout.swift in Sources */,
 				7BBBD57325AEFE9100301DCC /* BaseConfiguration.swift in Sources */,
-				7BBBD57425AEFE9100301DCC /* BaseViewController.swift in Sources */,
+				7BBBD57425AEFE9100301DCC /* HXBaseViewController.swift in Sources */,
 				7B7C5EFA27225DE4005B9B4B /* PhotoPickerLimitCell.swift in Sources */,
 				7B5833D226BCD034001F86F5 /* VideoEditorViewController+ToolView.swift in Sources */,
 				7B5460AC26DCC87000A65192 /* AlbumTitleViewConfiguration.swift in Sources */,
@@ -2103,7 +2103,7 @@
 				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 36YN45CVLK;
+				DEVELOPMENT_TEAM = 746Q4K3437;
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2131,7 +2131,7 @@
 				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 36YN45CVLK;
+				DEVELOPMENT_TEAM = 746Q4K3437;
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2156,7 +2156,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 36YN45CVLK;
+				DEVELOPMENT_TEAM = 746Q4K3437;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2190,7 +2190,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 36YN45CVLK;
+				DEVELOPMENT_TEAM = 746Q4K3437;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

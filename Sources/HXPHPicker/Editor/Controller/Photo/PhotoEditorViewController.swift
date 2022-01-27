@@ -12,7 +12,7 @@ import Photos
 import Kingfisher
 #endif
 
-open class PhotoEditorViewController: BaseViewController {
+open class PhotoEditorViewController: HXBaseViewController {
     
     public weak var delegate: PhotoEditorViewControllerDelegate?
     

@@ -11,7 +11,7 @@ import MobileCoreServices
 import AVFoundation
 import Photos
 
-public class PhotoPickerViewController: BaseViewController {
+public class PhotoPickerViewController: HXBaseViewController {
     let config: PhotoListConfiguration
     init(config: PhotoListConfiguration) {
         self.config = config
